@@ -1,0 +1,17 @@
+.tabs{
+    clip-path: polygon(0% 100%,10% 0%,90% 0% , 100% 100%);
+    z-index: 0;
+    
+}
+
+/* .apple_tab{
+    background-color: #ffdc7f;
+} */
+
+
+.sidebar_transparent{
+    background-color:  rgb(134, 145, 147);
+    /* filter: brightness(.8); */
+    /* background-image: linear-gradient(to right , #1d5d9b,#3b3d7e); */
+    
+}
