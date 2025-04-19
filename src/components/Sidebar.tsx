@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Tabs.module.css";
 import dynamic from "next/dynamic";
 import MPlayer from "./MPlayer";
@@ -7,7 +7,7 @@ import { IOpenSidebar } from "@/interfaces/interfaces";
 const Map = dynamic(() => import("../components/Map"), { ssr: false });
 
 function Sidebar({ isOpen }: IOpenSidebar) {
-  console.log(isOpen);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <aside
@@ -26,7 +26,12 @@ function Sidebar({ isOpen }: IOpenSidebar) {
           </p>
           <Map />
           <br />
-          <MPlayer />
+          <div className="flex justify-center items-center w-full ">
+          {
+            !isPlaying ? <button onClick={()=>setIsPlaying(true)} className="bg-cyan-950 rounded-2xl text-white p-3">play music for me :) </button> : <MPlayer />
+          }
+          </div>
+          {/* <MPlayer /> */}
         </div>
     </aside>
   );

@@ -9,18 +9,20 @@ function MPlayer() {
         const audio1 = playerRef.current?.audio.current;
         if(audio1){
             audio1.loop = true;
+            console.log("audio started");
+
         }
 
     },[])
-    const handleEnd = ()=>{
-        const audio = playerRef.current?.audio.current;
-        if(audio) {
-            audio.currentTime = 0;
-            audio.play();
-        }
-    }
+    // const handleEnd = ()=>{
+    //     const audio = playerRef.current?.audio.current;
+    //     if(audio) {
+    //         audio.currentTime = 0;
+    //         audio.play();
+    //     }
+    // }
   return (
-    <div>
+    <div className="w-full">
       {/* <audio controls autoPlay className='w-full rounded-md'>
             <source src='./musics/song.mp3' type='audio/mp3'/>
         </audio> */}
@@ -31,7 +33,7 @@ function MPlayer() {
         customAdditionalControls={[]}
         layout="horizontal"
         style={{ borderRadius: ".5rem", backgroundColor: "#1f2937" }}
-        onEnded={handleEnd}
+        // onEnded={handleEnd}
       />
     </div>
   );
