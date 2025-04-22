@@ -8,20 +8,28 @@ import Skilltab from "@/components/Skilltab";
 import CloseAnimatedSign from "@/components/CloseAnimatedSign";
 
 function Resome() {
-  const tabs = ["Skills", "tab2", "tab3", "tab4"];
+  const tabs = ["About", "Skills", "Exp. & Edu.", "More"];
   const [activeTab, setActiveTab] = useState(tabs[0]);
-  const [isOpenSidebar,setIsOpenSidebar] = useState(false);
-  const toggle= ()=>{setIsOpenSidebar(prev => !prev)};
-
+  const [isOpenSidebar, setIsOpenSidebar] = useState(false);
+  const toggle = () => {
+    setIsOpenSidebar((prev) => !prev);
+  };
 
   return (
     <div className={` ${styles.apple_tab} w-100% h-100% pt-30 `}>
       <div className="hidden lg:flex">
-        <CloseAnimatedSign isOpen={isOpenSidebar} toggle={toggle}/>
-        <Sidebar isOpen={isOpenSidebar}  />
+        <CloseAnimatedSign isOpen={isOpenSidebar} toggle={toggle} />
+        <Sidebar isOpen={isOpenSidebar} />
       </div>
-      {isOpenSidebar && <div className="fixed inset-0 bg-black opacity-40 z-20" onClick={()=>{setIsOpenSidebar(prev => !prev)}}></div>}
-      
+      {isOpenSidebar && (
+        <div
+          className="fixed inset-0 bg-black opacity-40 z-20"
+          onClick={() => {
+            setIsOpenSidebar((prev) => !prev);
+          }}
+        ></div>
+      )}
+
       <Container>
         <main className="">
           <div className=" flex justify-center flex-col lg:flex-row">
@@ -44,18 +52,19 @@ function Resome() {
             })}
           </div>
           <div>
-            {activeTab === "Skills" && <Skilltab />}
-            {activeTab === "tab2" && (
+            {activeTab === "About" && (
               <div>
                 <p>tab description 2</p>
               </div>
             )}
-            {activeTab === "tab3" && (
+
+            {activeTab === "Skills" && <Skilltab />}
+            {activeTab === "Exp. & Edu." && (
               <div>
                 <p>tab description 3</p>
               </div>
             )}
-            {activeTab === "tab4" && (
+            {activeTab === "More" && (
               <div>
                 <p>tab description 4</p>
               </div>
