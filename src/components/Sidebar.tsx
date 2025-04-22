@@ -13,17 +13,21 @@ function Sidebar({ isOpen }: IOpenSidebar) {
     <aside
       className={` ${
         styles.sidebar_transparent
-      } w-80 h-screen z-50 fixed overflow-auto custom-scroll transition-all duration-300 ${
+      } w-full lg:w-90 h-screen z-50 fixed top-0 lg:top-29 overflow-auto custom-scroll transition-all duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } `}
     >
         <div className="p-4">
-          <p className="text-center text-gray-700 ">Zeinab Malekmakan</p>
+          <br/><br/>
+          <p className="text-center text-gray-700 text-3xl">Zeinab Malekmakan</p>
           <br />
           <p className="text-center text-gray-700 ">
-            About Me jabjbXOB SQBCUWBEC CBUIWEBCJ CEWBCU CJUEWBC ECBEBCJUEBW
-            WCBECUEBC CBECJSCIOEHC ESC
+            Female, 1998-02-10
           </p>
+          <p className="text-center text-gray-700 ">
+            Tehran, Iran
+          </p>
+          <br/>
           <Map />
           <br />
           <div className="flex justify-center items-center w-full ">

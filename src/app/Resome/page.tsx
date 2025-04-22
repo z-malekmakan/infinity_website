@@ -6,6 +6,9 @@ import Container from "@/components/Container";
 import Sidebar from "@/components/Sidebar";
 import Skilltab from "@/components/Skilltab";
 import CloseAnimatedSign from "@/components/CloseAnimatedSign";
+import AboutTab from "@/components/AboutTab";
+import ExperienceEducationTab from "@/components/ExperienceEducationTab";
+import MoreTab from "@/components/MoreTab";
 
 function Resome() {
   const tabs = ["About", "Skills", "Exp. & Edu.", "More"];
@@ -17,7 +20,7 @@ function Resome() {
 
   return (
     <div className={` ${styles.apple_tab} w-100% h-100% pt-30 `}>
-      <div className="hidden lg:flex">
+      <div className="flex">
         <CloseAnimatedSign isOpen={isOpenSidebar} toggle={toggle} />
         <Sidebar isOpen={isOpenSidebar} />
       </div>
@@ -42,8 +45,8 @@ function Resome() {
                   }}
                   className={`${
                     styles.tabs
-                  } rounded lg:border-t border-b px-10 py-3 z-auto ${
-                    activeTab === item ? "bg-cyan-950 text-white" : ""
+                  } rounded lg: px-10 py-3 z-auto ${
+                    activeTab === item ? "bg-cyan-950 text-white" : "border-t lg:border-b"
                   } `}
                 >
                   <p className={`px-4 `}>{item}</p>
@@ -52,23 +55,11 @@ function Resome() {
             })}
           </div>
           <div>
-            {activeTab === "About" && (
-              <div>
-                <p>tab description 2</p>
-              </div>
-            )}
+            {activeTab === "About" && <AboutTab />}
 
             {activeTab === "Skills" && <Skilltab />}
-            {activeTab === "Exp. & Edu." && (
-              <div>
-                <p>tab description 3</p>
-              </div>
-            )}
-            {activeTab === "More" && (
-              <div>
-                <p>tab description 4</p>
-              </div>
-            )}
+            {activeTab === "Exp. & Edu." && <ExperienceEducationTab />}
+            {activeTab === "More" && <MoreTab />}
           </div>
         </main>
       </Container>

@@ -22,7 +22,7 @@ function Navbar() {
     },
     {
       href: "/Resome",
-      name: "Resome",
+      name: "Resume",
     },
     {
       href: "/Contact",

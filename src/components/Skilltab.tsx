@@ -21,7 +21,7 @@ function Skilltab() {
   ];
 
   return (
-    <div className="m-10 mt-0 pb-5 bg-cyan-900 rounded h-full ">
+    <div className="m-10 mt-0 pb-5 bg-cyan-900 rounded h-full w-full mx-auto">
       <div className="bg-cyan-800 h-8 rounded-t flex items-center pl-2 mb-4">
         <span className="w-5 h-5 bg-orange-700 rounded-full inline-block text-center mx-1"></span>
         <span className="w-5 h-5 bg-amber-400 rounded-full inline-block text-center mx-1"></span>

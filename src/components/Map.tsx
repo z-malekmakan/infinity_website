@@ -25,6 +25,7 @@ function Map() {
       </MapContainer>
       <div className="absolute top-2 left-11 bg-white shadow-lg border px-2 z-[1000] rounded-lg text-center text-sm flex items-center justify-center "><p className="text-gray-700"><a href="tel:09170613211" className="text-blue-800"><img src="./images/call.png" className="h-4 inline-block px-2"></img>09170613211</a></p></div>
       <div className="absolute top-8 left-11 bg-white shadow-lg border px-2 z-[1000] rounded-lg text-center text-sm flex items-center justify-center"><p className="text-gray-700"><a href="mailto:zmalekmakanph@gmail.com" className="text-blue-800"><img src="./images/mail.png" className="h-5 inline-block px-2"></img>zmalekmakanph@gmail.com</a></p></div>
+      <div className="absolute bottom-5 left-5 z-[1000] bg-white rounded-lg border px-1 text-center flex items-center justify-center text-sm"><a href="https://github.com/z-malekmakan" className="text-blue-800"><img src="./images/github.png" className="h-5 inline-block px-2"/>https://github.com/z-malekmakan</a></div>
     </div>
   );
 }

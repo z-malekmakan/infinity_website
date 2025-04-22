@@ -4,7 +4,7 @@ import React from "react";
 
 function CloseAnimatedSign({isOpen,toggle}:IOpenHamburger) {
   return (
-    <div className="relative z-[51] m-3" >
+    <div className="lg:fixed absolute lg:top-30 top-19 z-[51] m-3" >
       <div
         onClick={() => {
           toggle();
