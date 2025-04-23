@@ -61,7 +61,7 @@ function Navbar() {
       />
       <div className={`absolute bg-black/10 inset-0`}></div>
       <Container>
-        <div className="flex relative justify-between items-center mx-auto">
+        <div className="flex relative justify-between items-center mx-auto px-5">
           <div className="">
             <img
               src="./images/LOGO.png"
@@ -100,7 +100,7 @@ function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className={`hover:bg-cyan-50  rounded w-full flex text-center ${
+                        className={`hover:bg-cyan-50 text-black  rounded w-full flex text-center ${
                           pathname === item.href
                             ? "text-blue-600 bg-cyan-50"
                             : ""
