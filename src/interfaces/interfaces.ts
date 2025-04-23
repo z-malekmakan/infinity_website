@@ -10,3 +10,10 @@ export interface IOpenHamburger{
 export interface IOpenSidebar{
     isOpen : boolean; 
 }
+
+export interface ICourseItem {
+    id: string,
+    title: string,
+    description: string,
+    price: number
+}

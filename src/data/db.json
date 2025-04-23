@@ -1,0 +1,12 @@
+{
+  "courses": [
+    { "id": "1", "title": "React Js", "description": "xnlsknclks", "price": 30 },
+    { "id": "2", "title": "Next Js", "description": "xnlsknclks", "price": 33 },
+    { "id": "3", "title": "JavaScript", "description": "xnlsknclks", "price": 15 },
+    { "id": "4", "title": "Tailwind css", "description": "xnlsknclks", "price": 11 },
+    { "id": "5", "title": "Redux TLK", "description": "xnlsknclks", "price": 19 },
+    { "id": "6", "title": "Material UI web socket", "description": "xnlsknclks", "price": 12 },
+    { "id": "7", "title": "Restfull APIs", "description": "xnlsknclks", "price": 10 },
+    { "id": "8", "title": "HTML & CSS", "description": "xnlsknclks", "price": 7 }
+  ]
+}
