@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Container from "./Container";
 import { usePathname } from "next/navigation";
+import { themeContext } from "@/context/ThemeContext";
 
 function Navbar() {
   const [isHidden, setIsHidden] = useState(true);
+  const {theme, toggleTheme} = useContext(themeContext);
 
   const links = [
     {
@@ -117,6 +119,7 @@ function Navbar() {
             </nav>
           </div>
           <div className=" flex items-center">
+            <button onClick={toggleTheme}><img src="./images/theme.png" className="w-10"/></button>
             <Link href={"/Login"}>
               <button className="mx-1">
                 <img src="./images/login3.png" className="w-5 lg:w-8 " />

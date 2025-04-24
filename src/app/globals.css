@@ -21,7 +21,7 @@
 
 body {
   /* background: var(--background); */
-  background: #ffdc7f;
+  /* background: #ffdc7f; */
   background: oklch(82.8% 0.189 84.429);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;

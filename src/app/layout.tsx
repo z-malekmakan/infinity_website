@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/Layout";
 import dynamic from "next/dynamic";
+import ThemeContextProvider from "@/context/ThemeContext";
+import BodyStyleManager from "@/components/BodyStyleManager";
 
 export const metadata: Metadata = {
   title: "Infinity",
@@ -13,10 +15,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body className="h-full">
-        <Layout>{children}</Layout>
+        <ThemeContextProvider>
+          <BodyStyleManager/>
+          <Layout>{children}</Layout>
+        </ThemeContextProvider>
       </body>
     </html>
   );

@@ -17,3 +17,9 @@ export interface ICourseItem {
     description: string,
     price: number
 }
+
+export interface Ithemecontext {
+    theme : string;
+    setTheme : (theme : string)=>void;
+    toggleTheme : ()=>void
+}
