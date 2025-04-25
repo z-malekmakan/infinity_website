@@ -13,12 +13,12 @@ function ExperienceEducationTab() {
           <h1 className="lg:text-3xl text-amber-400">EXPERIENCE</h1>
           <hr />
           <br />
-          <h5 className="text-white font-bold lg:text-lg">
+          <h5 className="text-white font-bold lg:text-lg dark:text-neutral-300">
             FRONT-END DEVELOPER-REACT / INTERNSHIP
           </h5>
-          <h6 className="text-white">Sepanja , Shiraz</h6>
-          <h6 className="text-white">Sep 2024 - Mar 2025 (7 months)</h6> <br />
-          <p className="text-white">
+          <h6 className="text-white dark:text-neutral-300">Sepanja , Shiraz</h6>
+          <h6 className="text-white dark:text-neutral-300">Sep 2024 - Mar 2025 (7 months)</h6> <br />
+          <p className="text-white dark:text-neutral-300">
             I learned standard coding in react and some small libraries in the
             company. They are one of the best teams I have ever learned from.
           </p>
@@ -27,10 +27,10 @@ function ExperienceEducationTab() {
         <div>
           <h1 className="lg:text-3xl text-amber-400">EDUCATION</h1>
           <hr /><br/>
-          <h5 className="text-white font-bold lg:text-lg">
+          <h5 className="text-white font-bold lg:text-lg dark:text-neutral-300">
           BACHELOR OF SCIENCE IN COMPUTER SCIENCE
           </h5>
-          <h6 className="text-white">Pyame Noor University, Shiraz-( 2017-2021)</h6>
+          <h6 className="text-white dark:text-neutral-300">Pyame Noor University, Shiraz-( 2017-2021)</h6>
           <h6 className="text-white">2017-2021 (4 years)</h6> <br />
         </div>
       </div>

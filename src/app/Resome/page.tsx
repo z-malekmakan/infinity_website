@@ -46,7 +46,7 @@ function Resome() {
                   className={`${
                     styles.tabs
                   } rounded lg: px-10 py-3 z-auto ${
-                    activeTab === item ? "bg-cyan-950 text-white" : "border-t lg:border-b"
+                    activeTab === item ? "bg-cyan-950 text-white dark:bg-cyan-800" : "border-t lg:border-b text-black dark:text-white"
                   } `}
                 >
                   <p className={`px-4 `}>{item}</p>

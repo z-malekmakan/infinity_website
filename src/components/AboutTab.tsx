@@ -9,12 +9,12 @@ function AboutTab() {
         <span className="w-5 h-5 bg-green-600 rounded-full inline-block text-center mx-1"></span>
       </div>
       <div className="lg:px-10 px-5">
-        <h1 className="font-bold text-white lg:text-9xl">Zeinab Malekmakan</h1>
+        <h1 className="font-bold text-white lg:text-9xl"><span>Zeinab</span> <span>Malekmakan</span></h1>
         <p className="lg:text-4xl text-sm text-amber-400">Front-end Developer</p>
         <br />
         <hr />
         <br />
-        <p className="lg:text-2xl text-white text-sm">
+        <p className="lg:text-2xl text-white text-sm dark:text-neutral-300">
           I am a junior front-end developer with a strong focus on React. I’ve
           built my personal website and developed several small projects, always
           aiming for clean and maintainable code. My greatest strengths are my

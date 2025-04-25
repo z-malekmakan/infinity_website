@@ -10,7 +10,7 @@ export default function Home() {
   const { theme, setTheme } = useContext(themeContext);
   
   return (
-    <div className={` `}>
+    <div className={`dark:text-red-500 text-white`}>
       <Container>
         home
         <br />
@@ -35,7 +35,7 @@ export default function Home() {
         <br />
         <br />
         
-        <button className="bg-cyan-950 rounded px-2 text-white"
+        {/* <button className="bg-cyan-950 rounded px-2 text-white"
           onClick={() => {
             if (theme === "light") {
               setTheme("dark");
@@ -45,7 +45,7 @@ export default function Home() {
           }}
         >
           theme
-        </button>
+        </button> */}
       </Container>
     </div>
   );

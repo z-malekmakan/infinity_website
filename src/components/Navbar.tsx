@@ -7,7 +7,7 @@ import { themeContext } from "@/context/ThemeContext";
 
 function Navbar() {
   const [isHidden, setIsHidden] = useState(true);
-  const {theme, toggleTheme} = useContext(themeContext);
+  const { theme, toggleTheme } = useContext(themeContext);
 
   const links = [
     {
@@ -40,10 +40,17 @@ function Navbar() {
       } else {
         header?.classList.replace("opacity-70", "opacity-100");
       }
-    }
-    window.addEventListener("scroll",eventhandler );
-    return removeEventListener("scroll",eventhandler);
+    };
+    window.addEventListener("scroll", eventhandler);
+    return removeEventListener("scroll", eventhandler);
   }, []);
+
+  // useEffect(() => {
+  //   document.documentElement.classList.toggle("dark")
+  //   console.log(theme);
+
+  //   }
+  // , [theme])
 
   const pathname = usePathname();
   return (
@@ -65,11 +72,13 @@ function Navbar() {
       <Container>
         <div className="flex relative justify-between items-center mx-auto px-5">
           <div className="">
-            <img
-              src="./images/LOGO.png"
-              alt="LOGO"
-              className="w-20 lg:w-40 m-auto"
-            />
+            <Link href={"/"}>
+              <img
+                src="./images/LOGO.png"
+                alt="LOGO"
+                className="w-20 lg:w-40 m-auto"
+              />
+            </Link>
           </div>
 
           <div className="flex justify-between mx-auto ">
@@ -118,8 +127,10 @@ function Navbar() {
               </ul>
             </nav>
           </div>
-          <div className=" flex items-center">
-            <button onClick={toggleTheme}><img src="./images/theme.png" className="w-10"/></button>
+          <div className=" flex items-center justify-center">
+            <button onClick={toggleTheme}>
+              <img src="./images/theme.png" className="w-6 lg:w-10" />
+            </button>
             <Link href={"/Login"}>
               <button className="mx-1">
                 <img src="./images/login3.png" className="w-5 lg:w-8 " />

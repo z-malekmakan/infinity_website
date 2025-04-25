@@ -11,20 +11,20 @@ function MoreTab() {
       <div className="px-5 lg:px-10">
         <h1 className="text-amber-400 text-3xl">LANGUAGES</h1>
         <hr /><br/>
-        <h5 className="text-white lg:text-lg">English-Fluent</h5>
+        <h5 className="text-white lg:text-lg dark:text-neutral-300">English-Fluent</h5>
 
         <div className="w-40 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
           <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "95%"}}></div>
         </div>
         <br/>
-        <h5 className="text-white lg:text-lg">German-Basic</h5>
+        <h5 className="text-white lg:text-lg dark:text-neutral-300">German-Basic</h5>
 
         <div className="w-40 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
           <div className="bg-blue-600 h-2.5 rounded-full" style={{width: "30%"}}></div>
         </div><br/>
         <h1 className="text-amber-400 text-3xl">HOBIES</h1>
         <hr /><br/>
-        <h5 className="text-white lg:text-lg">Spend time with family and friends , Read books , Math Puzzles</h5>
+        <h5 className="text-white lg:text-lg dark:text-neutral-300">Spend time with family and friends , Read books , Math Puzzles</h5>
       </div>
     </div>
   );

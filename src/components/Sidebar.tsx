@@ -13,13 +13,13 @@ function Sidebar({ isOpen }: IOpenSidebar) {
     <aside
       className={` ${
         styles.sidebar_transparent
-      } w-full lg:w-90 h-screen z-50 fixed top-0 lg:top-29 overflow-auto custom-scroll transition-all duration-300 ${
+       }   w-90 lg:w-90 h-screen z-50 fixed top-0 lg:top-29 overflow-auto custom-scroll transition-all duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } `}
     >
         <div className="p-4">
           <br/><br/>
-          <p className="text-center text-gray-700 text-3xl">Zeinab Malekmakan</p>
+          <p className="text-center text-gray-700 text-3xl"><span className="block">Zeinab</span> Malekmakan</p>
           <br />
           <p className="text-center text-gray-700 ">
             Female, 1998-02-10

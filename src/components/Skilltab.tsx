@@ -32,9 +32,9 @@ function Skilltab() {
           return (
             <div
               key={index}
-              className="shadow rounded text-center py-2 my-2 mx-5 bg-amber-300 hover:scale-105 transition-all duration-300"
+              className="shadow rounded text-center py-2 my-2 mx-5 bg-amber-300 dark:bg-cyan-600 hover:scale-105 transition-all duration-300"
             >
-              <p>{item}</p>
+              <p className="text-black dark:text-white">{item}</p>
             </div>
           );
         })}
